@@ -1,0 +1,40 @@
+
+
+<h2>GET API</h2>
+
+<button (click)="getUsers()">Load Users</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>phone</th>
+            <th>Website</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of userList; track $index) {
+            <tr>
+                <td> {{$index+1}} </td>
+                <td> {{item.name}} </td>
+                <td> {{item.username}} </td>
+                <td> {{item.email}} </td>
+                <td> {{item.phone}} </td>
+                <td> {{item.website}} </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button (click)="getProducts()">Load Products</button>
+
+<div>
+    <select>
+        @for (item of productList; track $index) {
+            <option [value]="item.product_id"> {{item.name}} </option>
+        }
+    </select>
+</div>
