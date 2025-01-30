@@ -6,6 +6,7 @@ import { DataBindingComponent } from './components/data-binding/data-binding.com
 import { GetApiComponent } from './components/API/get-api/get-api.component';
 import { PostApiComponent } from './components/API/post-api/post-api.component';
 import { ResourceApiComponent } from './components/API/resource-api/resource-api.component';
+import { ObservableExamplesComponent } from './components/observable-examples/observable-examples.component';
 
 export const routes: Routes = [
     {
@@ -36,6 +37,10 @@ export const routes: Routes = [
     {
         path: 'resource-api',
         component: ResourceApiComponent
+    },
+    {
+        path: 'observable-examples',
+        component: ObservableExamplesComponent
     }
 ];
 
