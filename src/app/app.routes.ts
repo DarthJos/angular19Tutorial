@@ -5,6 +5,7 @@ import { LinkedSignalComponent } from './components/linked-signal/linked-signal.
 import { DataBindingComponent } from './components/data-binding/data-binding.component';
 import { GetApiComponent } from './components/API/get-api/get-api.component';
 import { PostApiComponent } from './components/API/post-api/post-api.component';
+import { ResourceApiComponent } from './components/API/resource-api/resource-api.component';
 
 export const routes: Routes = [
     {
@@ -31,6 +32,10 @@ export const routes: Routes = [
     {
         path: 'post-api',
         component: PostApiComponent
+    },
+    {
+        path: 'resource-api',
+        component: ResourceApiComponent
     }
 ];
 

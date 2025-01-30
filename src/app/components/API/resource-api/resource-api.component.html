@@ -1,0 +1,17 @@
+<h2>RESOURCE API</h2>
+<div>
+    userList contiene un valor ? {{userList.hasValue()}}
+</div>
+<div>
+    <ul>
+        @for (item of userList.value(); track $index) {
+            <li> {{item.name}} - {{item.username}} </li>
+        }
+    </ul>
+</div>
+<div>
+    Se está cargando el userList? {{userList.isLoading()}}
+</div>
+<div>
+    <button (click)="reloadData()">Reload Data</button>
+</div>
